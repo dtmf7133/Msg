@@ -1,0 +1,249 @@
+<?php
+
+/**
+ * Copyright 2021, 2024 5 Mode
+ *
+ * This file is part of Msg.
+ * 
+ * Msg is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Msg is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.  
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with Msg. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * config.inc
+ * 
+ * Msg configuration settings.
+ *
+ * @author Daniele Bonini <my25mb@aol.com>
+ * @copyrights (c) 2021, 2024, 5 Mode     
+ */
+
+define('DEBUG', true);
+define('ADMIN_VIEW', "1");
+define('PUBLIC_VIEW', "2");
+ 
+define('APP_NAME', "Msg");
+define('APP_TITLE', "Msg: everyone its msgbox.");
+define('APP_SALT', "yoursalt");
+define('APP_HOST', "msg.yourname.com");
+define('APP_PATH', "/var/www/yourpathto/Public");
+define('APP_HOME_PATH', "/var/www/yourpathto/Public/home.php");
+define('APP_PRIVATE_PATH', "/var/www/yourpathto/Private");
+define('APP_SCRIPT_PATH', "/var/www/yourpathto/Private/scripts");
+define('APP_AJAX_PATH', "/var/www/yourpathto/Private/scripts_ajax");
+define('APP_ERROR_PATH', "/var/www/yourpathto/Private/error");
+define('APP_DATA_PATH', "/var/www/yourpathto/Private/data");
+define('APP_LICENSE', <<<LICENSETEXT
+Copyright (c) 2016, 2024, 5 Mode
+All rights reserved.
+
+This file is part of Msg.
+
+Msg is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Msg is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.  
+
+You should have received a copy of the GNU General Public License
+along with Msg. If not, see <https://www.gnu.org/licenses/>.
+
+https://opensource.org/licenses/GPL-3.0
+LICENSETEXT
+);
+// Default Locale, in two letters format
+define('APP_DEF_LANG', "en-US");
+define('APP_DEF_PROFILE_PIC', "/res/pic1.png");
+define('APP_FILE_MAX_SIZE', 496000);
+define('APP_BLOG_MAX_POSTS', 10);
+define('APP_PAGINATION', true);
+
+$CONFIG = [
+
+   'DEBUG' => true,
+   'ADMIN_VIEW' => "1",
+   'PUBLIC_VIEW' => "2",
+ 
+   'APP' => [
+      'NAME' => "Msg",
+      'TITLE' => "Msg: everyone its msgbox.",
+      'SALT' => "yoursalt",        
+      'HOST' => "msg.yourname.com", 
+      'PATH' => "/var/www/yourpathto/Public",
+      'HOME_PATH' => "",
+      'PRIVATE_PATH' => "/var/www/yourpathto/Private", 
+      'SCRIPT_PATH' => "/var/www/yourpathto/Private/scripts",
+      'AJAX_PATH' => "/var/www/yourpathto/Private/scripts_ajax",
+      'ERROR_PATH' => "/var/www/yourpathto/Private/error",
+      'DATA_PATH' => "/var/www/yourpathto/Private/data",
+      'LICENSE' => <<<LICENSETEXT
+Copyright (c) 2016, 2024, 5 Mode
+All rights reserved.
+
+This file is part of Msg.
+
+Msg is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Msg is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.  
+
+You should have received a copy of the GNU General Public License
+along with Msg. If not, see <https://www.gnu.org/licenses/>.
+
+https://opensource.org/licenses/GPL-3.0 
+LICENSETEXT
+             ,
+      'DEF_LANG' => "en-US",
+      'DEF_PROFILE_PIC' => "/res/pic1.png", 
+      'FILE_MAX_SIZE' => 496000,
+      'BLOG_MAX_POSTS ' => 10,
+      'PAGINATION' => true
+      ],
+
+      'AUTH' =>  [
+            'FRIEND_0' => [
+	       'NICKNAME' => "Your Nickname",
+               'COLOR' => "blue",
+	       'PROFILE_PIC' => "/pic/dan1.png",
+	        // password: yoursecret
+	        // salt: yoursalt
+	       'HASH' => "yourhash",
+  	       // Timezone in +N format (without leading zero)
+	       'TIMEZONE' => "+2",
+	        // Language, in two letters format
+	       'LOCALE' => "en-US"
+	    ],
+            'FRIEND_1' => [
+	       'NICKNAME' => "Your NickName",
+               'COLOR' => "#202020",
+	       'PROFILE_PIC' => "/pic/qian1.png",
+	        // password: yoursecret
+	        // salt: yoursalt
+	       'HASH' => "yourhash",
+  	       // Timezone in +N format (without leading zero)
+	       'TIMEZONE' => "+2",
+	        // Language, in two letters format
+	       'LOCALE' => "zh-CN"
+	    ]
+        ]
+    ];  
+
+$LOCALE = [
+
+  'it-IT' => [
+
+    '/homeproxy.php' => [
+      'ping' => "pong",
+      'No message found.' => "Nessun messaggio.",
+      'Unhandle' => "Rilascia",
+      'Approved' => "Approvato",
+      'Ban' => "Banna",
+      'Delete' => "Cancella",
+      'PERSONAL MSGBOX' => "SEGRETERIA PERSONALE",
+      'This is the personal msgbox of' => "Questa è la segreteria personale di",
+      'Go' => "Vai",
+      'Hash Me' => "Codificami"
+       ],
+    
+    '/home.php' => [        
+      'ping' => "pong",
+      'Login with your password:' => "Accedi con la tua password:",
+      'How-to: Manage your avatars in Msg' => "How-to: Gestire i tuoi avatar in Msg",  
+      'CV' => "CV",  
+      'Sample' => "Esempio",   
+      'My Network' => "Network",
+      'Hello from 5 Mode' => "Ciao da 5 Mode",  
+      'This is just an example of blog entry' => "Questo e' giusto un esempio di post nel blog",  
+      'Drag-n-drop .mp3 files to shape the blog' => "Drag-n-drop file .mp3 per aggiungere al tuo blog",
+      'Drag-n-drop .png or .jpg files to shape the gallery' => "Drag-n-drop file .png e .jpg per aggiungere alla galleria",
+      'The other files will land in the *magic pot*' => "Tutti gli altri file che carichi finiranno nella *magic pot*",
+      'Attention: everyone who know the blog uri can partecipate or watch by loggin-in' => "Attenzione: tutti coloro che conoscono l'uri del blog possono partecipare o leggere loggandosi",
+      'Go' => "Vai",  
+      'Hash Me' => "Codificami",  
+      'Play' => "Riproduci",
+      'YOU' => "TU", 
+      'Some rights reserved' => "Alcuni diritti riservati"  
+         ],
+     
+    '/js/home-js.php' => [
+      'ping' => "pong",
+      'Please set your hash in the config file with this value' => "Puoi impostare il tuo hash nel file config con questo valore"   
+         ]  
+      
+      ],
+
+  'zh-CN' => [
+
+    '/homeproxy.php' => [
+      'ping' => "pong",
+      'No message found.' => "未找到邮件。",
+      'Unhandle' => "未处理的",
+      'Approved' => "得到正式认可的",
+      'Ban' => "禁止",
+      'Delete' => "删除",
+      'PERSONAL MSGBOX' => "个人消息框",
+      'This is the personal msgbox of' => "这是个人消息框",
+      'Go' => "去",  
+      'Hash Me' => "哈希我"
+       ],
+    
+    '/home.php' => [        
+      'ping' => "pong",
+      'Login with your password:' => "使用密码登录：",
+      'How-to: Manage your avatars in Msg' => "HOW-TO: 免费管理您的化身",    
+      'CV' => "简历",  
+      'Sample' => "样本",  
+      'My Network' => "我的网络",  
+      'Hello from 5 Mode' => "您好5 MODE",  
+      'This is just an example of blog entry' => "这只是博客条目的一个例子",    
+      'Drag-n-drop .mp3 files to shape the blog' => "删除文件.mp3以添加到您的博客",
+      'Drag-n-drop .png or .jpg files to shape the gallery' => "删除.png或.jpg文件以塑造画廊",
+      'The other files will land in the *magic pot*' => "所有其他文件将降落在 *magic pot*",      
+      'Attention: everyone who know the blog uri can partecipate or watch by loggin-in' => "注意：知道博客网址的都可以通过登录参与或观看",      
+      'Go' => "去",  
+      'Hash Me' => "哈希我",  
+      'Play' => "玩",
+      'YOU' => "你",
+      'Some rights reserved' => "保留一些权利"  
+         ],
+     
+    '/js/home-js.php' => [
+      'ping' => "pong",
+      'Please set your hash in the config file with this value' => "请在配置文件中设置您的哈希"     
+         ]  
+      
+      ]
+    
+  ];
+
+$EMOTICONS = [
+    '[:-)]' => "&#128578;",
+    '[:-p]' => "&#129297;",
+    '[:c)]' => "&#128512;",
+    '[;-)]' => "&#128521;",
+    '[:-J]' => "&#128527;",
+    '[;-P]' => "&#128540;",
+    '[:-/]' => "&#128533;",
+    '[@-)]' => "&#128531;",
+    '[B-)]' => "&#128526;",
+    '[=]]' => '&#128515;',
+    '[=)]' => "&#128516;",
+    '[*-)]' => "&#128525;"
+ ];
