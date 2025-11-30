@@ -33,7 +33,7 @@ define('PUBLIC_VIEW', "2");
 define('APP_NAME', "Msg");
 define('APP_TITLE', "Msg: everyone its msgbox.");
 define('APP_SALT', "yoursalt");
-define('APP_HOST', "msg.yourname.com");
+define('APP_HOST', "yoursitename.xyz");
 define('APP_PATH', "/var/www/yourpathto/Public");
 define('APP_HOME_PATH', "/var/www/yourpathto/Public/home.php");
 define('APP_PRIVATE_PATH', "/var/www/yourpathto/Private");
@@ -80,7 +80,7 @@ $CONFIG = [
       'NAME' => "Msg",
       'TITLE' => "Msg: everyone its msgbox.",
       'SALT' => "yoursalt",        
-      'HOST' => "msg.yourname.com", 
+      'HOST' => "yoursitename.xyz", 
       'PATH' => "/var/www/yourpathto/Public",
       'HOME_PATH' => "",
       'PRIVATE_PATH' => "/var/www/yourpathto/Private", 
