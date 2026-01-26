@@ -42,7 +42,7 @@ define('APP_AJAX_PATH', "/var/www/yourpathto/Private/scripts_ajax");
 define('APP_ERROR_PATH', "/var/www/yourpathto/Private/error");
 define('APP_DATA_PATH', "/var/www/yourpathto/Private/data");
 define('APP_LICENSE', <<<LICENSETEXT
-Copyright (c) 2016, 2024, 5 Mode
+Copyright (c) 2016, 2028 NuMode
 All rights reserved.
 
 This file is part of Msg.
@@ -89,7 +89,7 @@ $CONFIG = [
       'ERROR_PATH' => "/var/www/yourpathto/Private/error",
       'DATA_PATH' => "/var/www/yourpathto/Private/data",
       'LICENSE' => <<<LICENSETEXT
-Copyright (c) 2016, 2024, 5 Mode
+Copyright (c) 2016, 2028 NuMode
 All rights reserved.
 
 This file is part of Msg.
