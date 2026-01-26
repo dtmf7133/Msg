@@ -435,7 +435,7 @@ endif;
   <meta name="description" content="Welcome to Msg! Let everyone have its msg."/>
   <meta name="keywords" content="msg,msgbox,voice,machine,on,premise,solution"/>
   <meta name="robots" content="index,follow"/>
-  <meta name="author" content="5 Mode"/>
+  <meta name="author" content="NuMode"/>
   
   <script src="/js/jquery-3.6.0.min.js" type="text/javascript"></script>
   <script src="/js/sha.js" type="text/javascript"></script>
@@ -926,7 +926,7 @@ endif;
           <option value="zh-CN" <?PHP echo(($lang==PHP_CN?"selected":""));?>>cn</option>
         </select> 
     </div>
-    <span style="background:#FFFFFF; opacity:0.7;">&nbsp;&nbsp;A <a href="http://5mode.com" class="aaa">5 Mode</a> project and <a href="http://demo.5mode.com" class="aaa">WYSIWYG</a> system. CC</span></div>
+    <span style="background:#FFFFFF; opacity:0.7;">&nbsp;&nbsp;A <a href="http://numode.eu" class="aaa">NuMode</a> project and <a href="http://demo.numode.eu" class="aaa">WYSIWYG</a> system. CC</span></div>
            
  <?PHP endif; ?>           
      
