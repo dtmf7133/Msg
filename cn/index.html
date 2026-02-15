@@ -130,17 +130,17 @@ function showEncodedPassword() {
 </head>
 <body style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
 
-<div id="langhideit">
+ <div id="langhideen">
+   <br>
+   &nbsp;We have detected that you maybe speak English, do you want to be redirected to the english site? <button onclick="$('#langhideen').hide();">NO</button>&nbsp;<button onclick="window.open('https://msg.numode-foss.eu','_self');">OK</button>
+   <br><br>
+ </div>
+
+ <div id="langhideit">
    <br>
    &nbsp;We have detected that you maybe speak Italian, do you want to be redirected to the italian site? <button onclick="$('#langhideit').hide();">NO</button>&nbsp;<button onclick="window.open('https://msg.numode-foss.eu/it','_self');">OK</button>
    <br><br>
-</div>
-
-<div id="langhidecn">
-   <br>
-   &nbsp;We have detected that you maybe speak Chinese, do you want to be redirected to the chinese site? <button onclick="$('#langhidecn').hide();">NO</button>&nbsp;<button onclick="window.open('https://msg.numode-foss.eu/cn','_self');">OK</button>
-   <br><br>
-</div>
+ </div>
 
 <div id="HCsplash" style="padding-top: 160px; text-align: center; color: rgb(255, 255, 255); display: none;">
    <div id="myh1" style="display: inline;"><h1>Msg</h1></div><br>
@@ -177,28 +177,28 @@ function showEncodedPassword() {
         <span aria-hidden="true">×</span>
      </button>
 	
-	   Hello and welcome to Msg!<br><br>
-	   
-	   Msg is a light and simple software on premise to have your voice machine.<br><br>
-	   
-	   Msg is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br><br>
-	   
-     First step, use the left side panel password and salt fields to 
-create the hash to every of your friends in the config file. Remember to
- manually set there also the salt value.<br><br>
-	   
-	   As you are going to run Msg in the PHP process context, 
-using a limited web server or phpfpm user, you must follow some simple 
-directives for an optimal first setup:<br>
-	   <ol>
-	   <li>Check the permissions of your "data" folder in your web app private path; and set its path in the config file.</li>
-     <li>Finish to setup the configuration file apporpriately, in the specific:</li>
-     <ul>
-       <li>Configure the APP_FILE_MAX_SIZE for the upload appropriately.</li>
-       <li>Configure the APP_BLOG_MAX_POSTS attributes as required.</li>
-       <li>Configure the PAGINATION flag as required.</li>	      
-	   </ul>
-     </ol>
+您好，欢迎留言！<br><br>
+
+ Msg 是一款轻量且简单的软件，可让您拥有语音机器。<br><br>
+
+ Msg 根据 GPLv3 许可证发布，按原样提供，我们对其误用不承担任何责任。<br><br>
+
+ 第一步，使用左侧面板密码和盐字段
+在配置文件中为你的每个朋友创建哈希。记得
+ 还可以手动设置盐值。<br><br>
+
+ 当您要在 PHP 进程上下文中运行 Msg 时，
+使用有限的 Web 服务器或 phpfpm 用户，您必须遵循一些简单的操作
+最佳首次设置的指令：<br>
+ <ol>
+ <li>检查网络应用专用路径中“数据”文件夹的权限；并在配置文件中设置其路径。</li>
+ <li>完成配置文件的相应设置，具体为：</li>
+ <ul>
+ <li>适当配置上传的 APP_FILE_MAX_SIZE。</li>
+ <li>根据需要配置 APP_BLOG_MAX_POSTS 属性。</li>
+ <li>根据需要配置 PAGINATION 标志。</li>
+ </ul>
+ </ol>
 	   
 	   <br>	
      
@@ -259,11 +259,11 @@ window.addEventListener("load", function() {
       return ret;
     }
 
-    function isChinese() {
+    function isEnglish() {
       ret = false;
       lang = window.navigator.language;
       lang = lang.toLowerCase();
-      if (lang === "cn" || lang === "zh-cn" || lang === "chinese" || lang === "chinese simplified" || lang === "mandarin") {
+      if (lang === "en" || lang === "en-us" || lang === "en-gb" || lang === "english") {
         ret = true;
       }
       return ret;
@@ -273,8 +273,8 @@ window.addEventListener("load", function() {
       $("#langhideit").show();
     }
 
-    if (isChinese()) {
-      $("#langhidecn").show();
+    if (isEnglish()) {
+      $("#langhideen").show();
     }
 </script>
  
